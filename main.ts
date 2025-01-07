@@ -503,8 +503,9 @@ namespace grove {
     //% group="Moisture" pin.defl=AnalogPin.C16
     
     export function measureMoistureAnalog(pin: AnalogPin): number {
-        return (pins.analogReadPin(pin) - 400) * (600 - 0) / (280 - 400) + 0;
+    return (pins.analogReadPin(pin) - 700) * (500 - 10) / (400 - 700) + 10;
     }
+
 
     /**
      * Read the values of the moisture sensor in percent
