@@ -21,7 +21,7 @@
     "grove.measureInCentimeters|block": "Ultraschallsensor (in cm) an |%pin",
     "grove.measureInInches|block": "Ultraschallsensor (in inch) an |%pin",
     "grove.measureMoistureAnalog|block": "Feuchtigkeit (Calliope Feuchtigkeitssensor) an |%pin",
-    "grove.measureMoistureAnaloggrove|block": "Feuchtigkeit (analog) an |%pin",
+    "grove.measureMoistureAnalogOriginal|block": "Feuchtigkeit (analog) an |%pin",
     "grove.measureMoisturePercent|block": "Feuchtigkeit (in Prozent) an |%pin",
     "grove.createDisplay|block": "4-Ziffern Display an|%clkPin|und|%dataPin",
     "grove.PAJ7620.init|block": "%GestureModul|initialisiere den Gestensensor",
