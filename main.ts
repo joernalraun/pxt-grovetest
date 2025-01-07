@@ -497,15 +497,27 @@ namespace grove {
      * Read the analog values of the moisture sensor
      * @param pin signal pin of moisture sensor module
      */
-    //% blockId=grove_Moisture_analogVal block="Moisture Sensor (analog values) at|%pin"
+    //% blockId=grove_Moisture_analogVal block="Moisture Sensor (Calliope mini version) at|%pin"
     //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4
     //% pin.fieldOptions.tooltips="false" pin.fieldOptions.width="250"
     //% group="Moisture" pin.defl=AnalogPin.C16
     
     export function measureMoistureAnalog(pin: AnalogPin): number {
-    return (pins.analogReadPin(pin) - 700) * (500 - 10) / (400 - 700) + 10;
+    return Math.round((pins.analogReadPin(pin) - 700) * (500 - 10) / (400 - 700) + 10);
     }
 
+    /**
+     * Read the analog values of the moisture sensor
+     * @param pin signal pin of moisture sensor module
+     */
+    //% blockId=grove_Moisture_analoggroveVal block="Moisture Sensor (analog) at|%pin"
+    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4
+    //% pin.fieldOptions.tooltips="false" pin.fieldOptions.width="250"
+    //% group="Moisture" pin.defl=AnalogPin.C16
+    
+    export function measureMoistureAnaloggrove(pin: AnalogPin): number {
+    return ((pins.analogReadPin(pin);
+    }
 
     /**
      * Read the values of the moisture sensor in percent
